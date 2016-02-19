@@ -1,0 +1,9 @@
+<ion-view view-title="Films">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="film in films | orderBy: 'release_date'"
+                href="#/app/films/{{$index + 1}}">{{film.title}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
